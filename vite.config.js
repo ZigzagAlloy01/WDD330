@@ -11,8 +11,14 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
+        js: resolve(__dirname, "src/js"),
+        json: resolve(__dirname, "src/json"),
         cart: resolve(__dirname, "src/cart/index.html"),
         checkout: resolve(__dirname, "src/checkout/index.html"),
+        productAll: resolve(
+          __dirname,
+          "src/product_pages/product-details.html",
+        ),
         product1: resolve(
           __dirname,
           "src/product_pages/cedar-ridge-rimrock-2.html",
