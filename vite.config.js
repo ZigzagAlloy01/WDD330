@@ -3,7 +3,9 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   root: "src/",
-
+  server: {
+    port: process.env.PORT || 5173, // Use the Render specified PORT or fallback to 5173
+  },
   build: {
     outDir: "../dist",
     rollupOptions: {
